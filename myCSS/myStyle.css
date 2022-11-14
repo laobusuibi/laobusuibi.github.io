@@ -1,0 +1,64 @@
+/*修改底部为透明色*/
+#footer {
+    background: transparent;
+}
+/*修改底部字体颜色*/
+#footer-wrap{
+    color: darkblue;
+}
+
+/*无效*/
+/*#page-header{*/
+/*    background-color: transparent;*/
+/*}*/
+/*有效*/
+#page-header:not(.not-top-img):before {
+    background-color: rgba(0,0,0,0.0);
+}
+
+#pagination.pagination-post{
+    /*grey  lightsegreen*/
+    background: gray;
+}
+
+/*=======================================*/
+/*来源：https://leeay.gitee.io/2022/07/12/hexo/hexo%E5%8D%9A%E5%AE%A2butterfly%E8%AE%BE%E7%BD%AE%E9%80%8F%E6%98%8E%E5%BA%A6%EF%BC%8C%E4%BF%AE%E6%94%B9%E5%AD%97%E4%BD%93/*/
+
+
+ /*所有页面背景*/
+/*老布：经过我测试，这个地方只透明文章卡片，即主页显示的一个一个的文章*/
+#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+    /* 以下代表透明度为0.5 */
+    background: rgba(255,255,255,.9);
+}
+/* 文章页背景，即卡片的背景 */
+/*.layout_post>#post {*/
+/*    !* 以下代表透明度为0.5 可以自行修改*!*/
+/*    background: rgba(255,255,255,.1);*/
+/*}*/
+
+
+/*侧边栏页面,*/
+/*亲测可用*/
+#aside-content>.card-widget  {
+    background: rgba(255,255,255,.8);
+}
+#aside-content>.sticky_layout>.card-widget{
+    background: rgba(255,255,255,.8);
+}
+
+
+/*文章页面*/
+/*.layout>#post{*/
+/*    background: #C7EDCC ;*/
+/*    !*background: rgba(255,255,255,.6);*!*/
+/*}*/
+/*!*分类页面*!*/
+/*.layout>#page{*/
+
+/*    background: rgba(255,255,255,.6);*/
+/*}*/
+/*!*时间轴页面*!*/
+/*.layout>#archive{*/
+/*    background: rgba(255,255,255,.6);*/
+/*}*/
